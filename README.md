@@ -1,13 +1,16 @@
-#parse_medaka_variants.py
+# parse_medaka_variants.py
+
 Add _rough_ base counts for ALT alleles in a vcf file from `medaka` using the vcf file and a bam file as input. Useful for a superficial look at the basic read evidence for an ALT allele, _but_ there are issues with this approach given the many intricacies of variant calling. See usage below for further information on the assumptions/issues.
 
-##Installation
+## Installation
+
 `mamba env create -f environment.yaml`
 `conda activate medaka-parse`
 
 Installs `medaka` (and its dependencies), as well as `cyvcf2`. Otherwise uses default python libraries.
 
-##Usage
+## Usage
+
 ```
 usage: python3 parse_medaka_variants.py [options]
 
